@@ -5,28 +5,32 @@ cask "zin" do
   on_macos do
     on_intel do
       sha256 "670c7c76025dc37ce13f05694242d7f10b64ab0429cba57299c4cc90f30b0f06"
-      url "https://github.com/Idenity67/zinetic-cli/releases/download/v#{version}/zin_#{version}_darwin_amd64.tar.gz"
+      url "https://github.com/Idenity67/zinetic-cli-dist/releases/download/v#{version}/zin_#{version}_darwin_amd64.tar.gz",
+          verified: "github.com/Idenity67/zinetic-cli-dist/"
     end
     on_arm do
       sha256 "3b78f3c3124ad40ac370e621880fb885948ae217546278ce23d99345773cd7f8"
-      url "https://github.com/Idenity67/zinetic-cli/releases/download/v#{version}/zin_#{version}_darwin_arm64.tar.gz"
+      url "https://github.com/Idenity67/zinetic-cli-dist/releases/download/v#{version}/zin_#{version}_darwin_arm64.tar.gz",
+          verified: "github.com/Idenity67/zinetic-cli-dist/"
     end
   end
 
   on_linux do
     on_intel do
       sha256 "2aad1f9ec7fae3b078fb88147e4af81a3540f3080f2681dd22fa26c27d079335"
-      url "https://github.com/Idenity67/zinetic-cli/releases/download/v#{version}/zin_#{version}_linux_amd64.tar.gz"
+      url "https://github.com/Idenity67/zinetic-cli-dist/releases/download/v#{version}/zin_#{version}_linux_amd64.tar.gz",
+          verified: "github.com/Idenity67/zinetic-cli-dist/"
     end
     on_arm do
       sha256 "a30d5c918f9dffb148ba5467824032fa0b93c4c3d4f0e0ee1366f04433c80315"
-      url "https://github.com/Idenity67/zinetic-cli/releases/download/v#{version}/zin_#{version}_linux_arm64.tar.gz"
+      url "https://github.com/Idenity67/zinetic-cli-dist/releases/download/v#{version}/zin_#{version}_linux_arm64.tar.gz",
+          verified: "github.com/Idenity67/zinetic-cli-dist/"
     end
   end
 
   name "zin"
   desc "Zinetic Zero Trust CLI"
-  homepage "https://github.com/Idenity67/zinetic-cli"
+  homepage "https://cli.zinetic.net"
 
   livecheck do
     skip "Auto-generated on release."
